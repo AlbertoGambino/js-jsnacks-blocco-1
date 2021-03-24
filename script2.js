@@ -16,16 +16,8 @@ for(var key in meStesso){
   mioNome += meStesso[key] + ' '
 }
 
-
 // - Creare un array di oggetti di studenti. Ciclare su tutti gli
 // studenti e stampare per ognuno nome e cognome
-
-nomeStudenti = [];
-
-for(var key in studenti){
-
-  nomeStudenti = studenti[key]['nome'] + ' ' + studenti[key]['cognome']
-}
 
 var studenti = [
 
@@ -37,7 +29,12 @@ var studenti = [
 ]
 
 
+for(var key in studenti){
 
+  var fullName = studenti[key]['nome'] + ' ' + studenti[key]['cognome'];
+
+  console.log(fullName);
+}
 
 // - Dare la possibilità all'utente attraverso 3 prompt di
 // aggiungere un nuovo oggetto studente inserendo
@@ -53,9 +50,7 @@ studenti.push(nuovoStudente)
 
 function init(){
 
-
 console.log(mioNome);
-console.log(nomeStudenti);
 console.log(studenti);
 
 }
